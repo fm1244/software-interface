@@ -1,26 +1,43 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav .logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: space-around;
+    margin: 0;
 }
 
-nav a {
-    color: #fff;
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #333;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .intro {
@@ -50,8 +67,18 @@ section {
     text-align: center;
 }
 
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .service {
-    margin: 2rem 0;
+    flex: 1 1 45%;
+    background: #f4f4f4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 form {
@@ -81,4 +108,23 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
